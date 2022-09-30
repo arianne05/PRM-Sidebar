@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <!--Boxicons Link-->  
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <!--SIDEBAR-->
+    <div class="sidebar_nav"> <!--Main Div-->
+        <div class="logo_content"> <!--Logo Container-->
+            <div class="logo">
+                <i class='bx bx-file'></i> <!--Logo-->
+                <div class="logo_name">Patient RMS</div> <!--Logo Name-->
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+    
+    <ul class="nav_list1">
+        <li>
+            <a href="">
+                <i class='bx bx-home-alt' ></i><!--Logo List-->
+                <span class="link_name">Dashboard</span>
+            </a>
+                <span class="tooltip">Dashboard</span> <!--Will Apply CSS later-->
+        </li>
+        <li>
+            <a href="">
+                <i class='bx bx-user' ></i><!--Logo List-->
+                <span class="link_name">Patient</span>
+            </a>
+                <span class="tooltip">Patient</span> <!--Will Apply CSS later-->
+        </li>
+        <li>
+            <a href="">
+                <i class='bx bxs-videos' ></i><!--Logo List-->
+                <span class="link_name">Tutorial</span>
+            </a>
+                <span class="tooltip">Tutorial</span> <!--Will Apply CSS later-->
+        </li>
+        <li>
+            <a href="">
+                <i class='bx bx-server' ></i><!--Logo List-->
+                <span class="link_name">Backup</span>
+            </a>
+                <span class="tooltip">Backup</span> <!--Will Apply CSS later-->
+        </li>
+        </ul>
+
+        <hr class="divider">
+
+        <ul class="nav_list2">
+        <li>
+            <a href="">
+                <i class='bx bx-band-aid'></i><!--Logo List-->
+                <span class="link_name">Services</span>
+            </a>
+                <span class="tooltip">Services</span> <!--Will Apply CSS later-->
+        </li>
+        <li>
+            <a href="">
+                <i class='bx bx-archive-in'></i><!--Logo List-->
+                <span class="link_name">Masterlist</span>
+            </a>
+                <span class="tooltip">Masterlist</span> <!--Will Apply CSS later-->
+        </li>
+        </ul>
+
+        <ul class="nav_list3">
+        <li>
+            <a href="">
+                <i class='bx bx-cog'></i><!--Logo List-->
+                <span class="link_name">Settings</span>
+            </a>
+                <span class="tooltip">Settings</span> <!--Will Apply CSS later-->
+        </li>
+        <li>
+            <a href="">
+                <i class='bx bx-info-circle'></i><!--Logo List-->
+                <span class="link_name">Feedback</span>
+            </a>
+                <span class="tooltip">Feedback</span> <!--Will Apply CSS later-->
+        </li>
+        <li>
+            <a href="">
+                <i class='bx bx-log-out'></i><!--Logo List-->
+                <span class="link_name">Logout</span>
+            </a>
+                <span class="tooltip">Logout</span> <!--Will Apply CSS later-->
+        </li>
+    </ul>    
+    </div>
+    <!--SIDEBAR-->
+
+    
+
+    <div class="home_content">
+        <div class="text"><h4>Dashboard</h3></div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar_nav");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+
+    </script>
+
+</body>
+</html>
